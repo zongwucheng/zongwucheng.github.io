@@ -1562,6 +1562,12 @@ img:not([src]) {
 .img-alt:hover {
   text-decoration: none !important;
 }
+@media screen and (max-width: $sm) {
+  #aside_content div:not(:last-child) {
+    display: none;
+    font-size: 13px;
+  }
+}
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #121212;
 }
@@ -6372,11 +6378,5 @@ blockquote.pullquote.right {
   #local-search .search-dialog .search-result-list {
     padding-bottom: 2rem;
     max-height: 75vh !important;
-  }
-}
-@media screen and (max-width: $sm) {
-  #aside_content div:not(:last-child) {
-    display: none;
-    font-size: 13px;
   }
 }
